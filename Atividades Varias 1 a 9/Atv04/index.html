@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04 - COmbobxt</title>
+</head>
+<body>
+
+    <table>
+       <tr>
+           <th style="background-color: gray;"> Estado 1</th>
+           <th style="background-color: gray;"> Estado 2</th>
+       </tr>
+       <tr>
+        <th style="background-color: rgb(226, 219, 219);"> Com a opção "escolha um estado" selecionado </th>
+        <th style="background-color: rgb(226, 219, 219);"> Com uma opção diferente de “Escolha um estado” selecionada</th>
+       </tr>
+       <tr>
+        <th style="background-color: rgb(235, 225, 225);"> <select id="cboEstados">
+            <option value=" "> Escolha um Estado</option>
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="rj">Rio de janeiro</option>
+            <option value="es">Espírito Santo</option>
+        </select></th>
+        <th style="background-color: rgb(226, 219, 219);">
+            <select id="cboEstados">
+                <option value=" "> Escolha um Estado</option>
+                <option value="sp" id="fname" onchange="myFunction()">São Paulo</option>
+                <option value="mg" id="fname" onchange="myFunction()">Minas Gerais</option>
+                <option value="rj" id="fname" onchange="myFunction()">Rio de janeiro</option>
+                <option value="es" id="fname" onchange="myFunction()">Espírito Santo</option> 
+            </select>
+            <select name="cidades" id="fname"> 
+                <option value=" "> Escolha uma cidade</option>
+
+            </select>
+        
+        </th>
+       </tr>
+    </table>
+    
+
+    <script>
+        
+            function myFunction() {
+                var x = document.getElementById("fname");
+                onchange.log;
+            }  
+        
+    </script>
+</body>
+</html>

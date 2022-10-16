@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03 Nota de Alunos</title>
+    <style>
+        body{
+            font: normal 30pt arial;
+            color: slateblue;
+            background-color: darkslategray;
+          
+        }
+        h1{ color: aqua;
+            font: bolder 40pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados da Pessoa</h1>
+
+    <script>
+        var nome = window.prompt ('Qual seu nome:')
+        var idade = window.prompt ('Qual sua idade: ')
+        var sexo = window.prompt ('Qual sexo você se identifica:')
+        var altura = window.prompt ('Qual a sua altura: ')
+        var profissao = window.prompt ('Qual a profissão: ')
+        var rua = window.prompt ('Qual a sua rua: ')
+        var numero = window.prompt('Qual o numero ..:')
+        var bairro = window.prompt ('Qual o nome do bairro: ')
+        var cidade = window.prompt ('Qual o nome da sua cidade: ')
+        var estado = window.prompt ('Qual seu estado: ')
+        var cep = window.prompt ('Qual o seu CEP:')
+        
+        document.writeln(`============================================= <br/>`)
+        document.writeln(`${nome}, você tem ${idade}, do sexo ${sexo} <br/>`)
+        document.writeln(`com altura de ${altura} <br/>`)
+        document.writeln(` sua profissão é ${profissao} <br/> `)
+        document.writeln(`Mora na rua ${rua} nº ${numero} `)
+        document.writeln(` Bairro: ${bairro} - ${cidade} - ${estado} - CEP: ${cep}`)
+        document.writeln(`============================================= <br/>`)
+        //document.writeln(`Seu nome em maiusculas é ${nome.toUpperCase()}<br/>`)
+        //document.writeln(`Seu nome em minusculas é ${nome.toLowerCase()}<br/>`)
+        console.log
+
+    </script>
+</body>
+</html>

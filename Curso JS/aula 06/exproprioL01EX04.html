@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04 Salario</title>
+    <style>
+        body{
+            font: normal 30pt arial;
+            color: slateblue; 
+            background-color: rgb(166, 194, 194);
+        }
+        p{
+            color: rgb(216, 140, 156);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Exercicio 04 - Salario Calculo
+    </h1>
+    <p>
+        Faça um programa para o cálculo de uma folha de pagamento, sabendo que os
+        descontos são do Imposto de Renda, que depende do salário bruto (conforme
+        tabela abaixo), 10% para o INSS. O FGTS corresponde a
+        11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O
+        Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa
+        deverá pedir ao usuário o valor da hora e a quantidade de horas trabalhadas no
+        mês.
+    </p>
+
+    <script>
+        var nome = window.prompt ('Qual o nome do Colaborador?')
+        var salario = Number.parseFloat(window.prompt('Insira o salario base ..: ')) 
+        while (salario < 1200)
+        {
+            var salario = Number.parseFloat(window.prompt(' Valor Inválido - Insira o salario base ..: '))
+        }
+        if ( salario >= 1500)
+        {
+            var imp_red = 0.05
+        }
+        if ( salario >= 2500)
+        {
+            var imp_red = 0.10
+        }
+        var imprenda = salario * imp_red
+        var sind = salario * 0.03
+        var inss = salario * 0.10
+        var fgts = salario * 0.11
+        var salarioliq = salario - imprenda - sind - inss
+        
+        document.writeln (` O colaborador ${nome} tem um salario bruto de ${salario} <br/>`)
+        document.writeln(` Os impostos e descontos são: Sindicado - R$ ${sind} - INSS R$ ${inss} - <br/>`)
+        document.writeln(` FGTS R$ ${fgts} - Imposto de Renda ${imprenda} <br/>`)
+        document.writeln(` -------------------------------------------------------------------------- <br/>`)
+        document.writeln(` Valor do salario Liquido = R$ ${salarioliq}`)
+        console.log
+
+    </script>
+</body>
+</html>

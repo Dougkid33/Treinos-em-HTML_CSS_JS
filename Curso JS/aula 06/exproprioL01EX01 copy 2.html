@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03 Nota de Alunos</title>
+    <style>
+        body{
+            font: normal 30pt arial;
+            color: slateblue;
+          
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt ('Qual o nome do aluno?')
+        var nota1 = Number.parseFloat(window.prompt('Insira a Nota 01..: ')) 
+        var nota2 = Number.parseFloat(window.prompt('Insira a Nota 02..: '))
+        var nota3 = Number.parseFloat(window.prompt('Insira a Nota 03..: '))
+        var nota4 = Number.parseFloat(window.prompt('Insira a Nota 04..: '))
+        var soma = nota1 + nota2 + nota3 + nota4
+        var media = soma / 4
+        document.write(`Olá, aluno  ${nome}!! sua media  eh ${media} . <br/>`)
+        if( media > 5 )
+        {
+            document.writeln(`O aluno ${nome} foi aprovado. <br/>`)
+        }
+        if( media == 5)
+        { document.writeln (`O aluno ${nome} esta de recuperação. <br/>` )}
+
+        if( media < 5)
+        { document.writeln (`O aluno ${nome}  foi reprovado. <br/>` )}
+        
+        //document.writeln(`Seu nome em maiusculas é ${nome.toUpperCase()}<br/>`)
+        //document.writeln(`Seu nome em minusculas é ${nome.toLowerCase()}<br/>`)
+        console.log
+
+    </script>
+</body>
+</html>

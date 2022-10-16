@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX07</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+
+        }
+        h1{
+            font-style: italic;
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Exercicios 07</h1>
+
+
+    <script>
+        const numero = ["55", "43", "-1589" , "-6", "23","44","40", "100"]
+        var i = 0;
+        for( i = 0; i <numero.length; i++)
+        {
+            console.log(numero[i]);
+        }
+        numero.sort()
+        const min = Math.min("55", "43", "-1589" , "-6", "23","44","40", "100");
+        const max = Math.max("55", "43", "-1589" , "-6", "23","44","40", "100");
+        document.write(`${numero}`)
+        alert(" O maior numero e " + max)
+        alert(" O menor numero e " + min)
+
+ 
+
+    
+    </script>
+</body>
+</html>
