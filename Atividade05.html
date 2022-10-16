@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <title> Atv05</title>
+    </head>
+    <body>
+        <h1> Atv05 </h1>
+        <div id ="div-dados">
+            <p>JEAN CARLOS DE SOUZA SILVA</p>
+            <p>MATHEUS MACEDO DE FREITAS</p>
+            <p>GUSTAVO NAVES DE SOUZA</p>
+            <p>PATRICIA TANIMOTO TANAKA</p>
+            <p>DEBORA BONFIM GUEDES</p>
+            <p>HEBERT OLIVEIRA BRAGA</p>   
+        </div>
+        <div id="div-ordenado">
+            <script>
+                var ElementosP = divDados.getElementsby("div-dados")=("p");
+                var VetorElementosP = Array.from(ElementosP);
+                function Ordenar() {
+                    var VetorElementosP = document.getElementsBy("div-dados");
+
+                    VetorElementosP.value = " ";
+                    VetorElementosP = VetorElementosP.sort();
+                        document.getElementsby("div-ordenado").innerHTML = "";
+
+                        for( var i=0; i<VetorElementosP.lenght;i++){
+                            document.getElementsby("div-dados").innerHTML = "";
+                        }
+                }
+            </script>
+        </div>
+
+    </body>
+</html>        
+        
+
+        
+           
